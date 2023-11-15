@@ -1,5 +1,4 @@
-﻿using IssueTrackerApi.Services;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace IssueTrackerApi.Models;
 
@@ -16,7 +15,6 @@ public record IssueResponseModel
     public string User { get; set; } = string.Empty;
     public DateTimeOffset Filed { get; set; }
     public IssuePriority Priority { get; set; }
-    public OnCallDeveloperApiResponse? SupportInfo { get; set; }
 }
 
 public enum IssuePriority { Question, Bug, FeatureRequest, HighPriority }
